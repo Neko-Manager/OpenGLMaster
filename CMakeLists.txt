@@ -48,7 +48,8 @@ set (SRC_FILES
 # Add source to this project's executable.
 add_executable (OpenGLV2024  ${IMGUI_HEADERS} ${IMGUI_SOURCE} ${HEADER_FILES} ${SRC_FILES} "OpenGLV2024.cpp" "OpenGLV2024.h")
 
-target_link_libraries(3Dprog24 glfw)
+#target_link_libraries(OpenGLV2024 glfw)
+target_link_libraries(OpenGLV2024 PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/libs/glfw3.lib)
 
 if (CMAKE_VERSION VERSION_GREATER 3.12)
   set_property(TARGET OpenGLV2024 PROPERTY CXX_STANDARD 20)

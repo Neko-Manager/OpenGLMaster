@@ -1,3 +1,3 @@
-C:/Dokumenter/SpiltekV2024/3D_Prog/OpenGLMaster/OpenGLV2024/out/build/x64-debug/CMakeFiles/OpenGLV2024.dir
-C:/Dokumenter/SpiltekV2024/3D_Prog/OpenGLMaster/OpenGLV2024/out/build/x64-debug/CMakeFiles/edit_cache.dir
-C:/Dokumenter/SpiltekV2024/3D_Prog/OpenGLMaster/OpenGLV2024/out/build/x64-debug/CMakeFiles/rebuild_cache.dir
+C:/VisualStudioProjects/OpenGLV2024/out/build/x64-debug/CMakeFiles/OpenGLV2024.dir
+C:/VisualStudioProjects/OpenGLV2024/out/build/x64-debug/CMakeFiles/edit_cache.dir
+C:/VisualStudioProjects/OpenGLV2024/out/build/x64-debug/CMakeFiles/rebuild_cache.dir
