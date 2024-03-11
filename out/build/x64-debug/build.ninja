@@ -105,6 +105,14 @@ build CMakeFiles\OpenGLV2024.dir\includes\imgui\imgui_tables.cpp.obj: CXX_COMPIL
   TARGET_COMPILE_PDB = CMakeFiles\OpenGLV2024.dir\
   TARGET_PDB = OpenGLV2024.pdb
 
+build CMakeFiles\OpenGLV2024.dir\core\Application.cpp.obj: CXX_COMPILER__OpenGLV2024_unscanned_Debug C$:\VisualStudioProjects\OpenGLV2024\core\Application.cpp || cmake_object_order_depends_target_OpenGLV2024
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -std:c++20 -ZI
+  INCLUDES = -IC:\VisualStudioProjects\OpenGLV2024\includes -IC:\VisualStudioProjects\OpenGLV2024\includes\imgui -IC:\VisualStudioProjects\OpenGLV2024\core
+  OBJECT_DIR = CMakeFiles\OpenGLV2024.dir
+  OBJECT_FILE_DIR = CMakeFiles\OpenGLV2024.dir\core
+  TARGET_COMPILE_PDB = CMakeFiles\OpenGLV2024.dir\
+  TARGET_PDB = OpenGLV2024.pdb
+
 build CMakeFiles\OpenGLV2024.dir\OpenGLV2024.cpp.obj: CXX_COMPILER__OpenGLV2024_unscanned_Debug C$:\VisualStudioProjects\OpenGLV2024\OpenGLV2024.cpp || cmake_object_order_depends_target_OpenGLV2024
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -std:c++20 -ZI
   INCLUDES = -IC:\VisualStudioProjects\OpenGLV2024\includes -IC:\VisualStudioProjects\OpenGLV2024\includes\imgui -IC:\VisualStudioProjects\OpenGLV2024\core
@@ -121,7 +129,7 @@ build CMakeFiles\OpenGLV2024.dir\includes\glad.c.obj: C_COMPILER__OpenGLV2024_un
   TARGET_COMPILE_PDB = CMakeFiles\OpenGLV2024.dir\
   TARGET_PDB = OpenGLV2024.pdb
 
-build CMakeFiles\OpenGLV2024.dir\core\Application.cpp.obj: CXX_COMPILER__OpenGLV2024_unscanned_Debug C$:\VisualStudioProjects\OpenGLV2024\core\Application.cpp || cmake_object_order_depends_target_OpenGLV2024
+build CMakeFiles\OpenGLV2024.dir\core\Window.cpp.obj: CXX_COMPILER__OpenGLV2024_unscanned_Debug C$:\VisualStudioProjects\OpenGLV2024\core\Window.cpp || cmake_object_order_depends_target_OpenGLV2024
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -std:c++20 -ZI
   INCLUDES = -IC:\VisualStudioProjects\OpenGLV2024\includes -IC:\VisualStudioProjects\OpenGLV2024\includes\imgui -IC:\VisualStudioProjects\OpenGLV2024\core
   OBJECT_DIR = CMakeFiles\OpenGLV2024.dir
@@ -137,7 +145,7 @@ build CMakeFiles\OpenGLV2024.dir\core\Application.cpp.obj: CXX_COMPILER__OpenGLV
 #############################################
 # Link the executable OpenGLV2024.exe
 
-build OpenGLV2024.exe: CXX_EXECUTABLE_LINKER__OpenGLV2024_Debug CMakeFiles\OpenGLV2024.dir\includes\imgui\imgui.cpp.obj CMakeFiles\OpenGLV2024.dir\includes\imgui\imgui_demo.cpp.obj CMakeFiles\OpenGLV2024.dir\includes\imgui\imgui_draw.cpp.obj CMakeFiles\OpenGLV2024.dir\includes\imgui\imgui_widgets.cpp.obj CMakeFiles\OpenGLV2024.dir\includes\imgui\imgui_impl_opengl3.cpp.obj CMakeFiles\OpenGLV2024.dir\includes\imgui\imgui_impl_glfw.cpp.obj CMakeFiles\OpenGLV2024.dir\includes\imgui\imgui_tables.cpp.obj CMakeFiles\OpenGLV2024.dir\OpenGLV2024.cpp.obj CMakeFiles\OpenGLV2024.dir\includes\glad.c.obj CMakeFiles\OpenGLV2024.dir\core\Application.cpp.obj | C$:\VisualStudioProjects\OpenGLV2024\libs\glfw3.lib
+build OpenGLV2024.exe: CXX_EXECUTABLE_LINKER__OpenGLV2024_Debug CMakeFiles\OpenGLV2024.dir\includes\imgui\imgui.cpp.obj CMakeFiles\OpenGLV2024.dir\includes\imgui\imgui_demo.cpp.obj CMakeFiles\OpenGLV2024.dir\includes\imgui\imgui_draw.cpp.obj CMakeFiles\OpenGLV2024.dir\includes\imgui\imgui_widgets.cpp.obj CMakeFiles\OpenGLV2024.dir\includes\imgui\imgui_impl_opengl3.cpp.obj CMakeFiles\OpenGLV2024.dir\includes\imgui\imgui_impl_glfw.cpp.obj CMakeFiles\OpenGLV2024.dir\includes\imgui\imgui_tables.cpp.obj CMakeFiles\OpenGLV2024.dir\core\Application.cpp.obj CMakeFiles\OpenGLV2024.dir\OpenGLV2024.cpp.obj CMakeFiles\OpenGLV2024.dir\includes\glad.c.obj CMakeFiles\OpenGLV2024.dir\core\Window.cpp.obj | C$:\VisualStudioProjects\OpenGLV2024\libs\glfw3.lib
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -ZI
   LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
   LINK_LIBRARIES = C:\VisualStudioProjects\OpenGLV2024\libs\glfw3.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib

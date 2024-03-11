@@ -39,15 +39,15 @@ set (HEADER_FILES
   includes/stb_image.h
   OpenGLV2024.h
    core/Application.h 
-   core/Application.cpp)
+   core/Application.cpp "core/Window.h")
 
 set (SRC_FILES
   OpenGLV2024.cpp
   includes/glad.c
- "core/Application.cpp")
+ "core/Application.cpp" "core/Window.cpp")
 
 # Add source to this project's executable.
-add_executable (OpenGLV2024  ${IMGUI_HEADERS} ${IMGUI_SOURCE} ${HEADER_FILES} ${SRC_FILES} "OpenGLV2024.cpp" "OpenGLV2024.h" "core/Application.h" "core/Application.cpp")
+add_executable (OpenGLV2024  ${IMGUI_HEADERS} ${IMGUI_SOURCE} ${HEADER_FILES} ${SRC_FILES} "OpenGLV2024.cpp" "OpenGLV2024.h" "core/Application.h" "core/Application.cpp" "core/Window.h" "core/Window.cpp")
 
 #target_link_libraries(OpenGLV2024 glfw)
 target_link_libraries(OpenGLV2024 PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/libs/glfw3.lib)
