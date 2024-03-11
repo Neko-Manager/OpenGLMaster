@@ -1,11 +1,11 @@
 # ninja log v5
-22	303	7318674877960327	CMakeFiles/OpenGLV2024.dir/includes/imgui/imgui_tables.cpp.obj	47bda8e6ba22cd57
-15	321	7318674878155434	CMakeFiles/OpenGLV2024.dir/includes/imgui/imgui_impl_opengl3.cpp.obj	750594e2473a3363
-7	348	7318674878392234	CMakeFiles/OpenGLV2024.dir/includes/imgui/imgui_demo.cpp.obj	ee2c05561db1c2f6
-28	349	7318674878412234	CMakeFiles/OpenGLV2024.dir/includes/glad.c.obj	d04f0388b492711c
-3	617	7318674881109231	CMakeFiles/OpenGLV2024.dir/includes/imgui/imgui.cpp.obj	87dcfb685115ab3c
-9	386	7318674878779126	CMakeFiles/OpenGLV2024.dir/includes/imgui/imgui_draw.cpp.obj	e9941fba0e0df5f0
-18	493	7318674879877253	CMakeFiles/OpenGLV2024.dir/includes/imgui/imgui_impl_glfw.cpp.obj	b090305c2784466
-12	412	7318674879061742	CMakeFiles/OpenGLV2024.dir/includes/imgui/imgui_widgets.cpp.obj	c51b7e363d662898
-7	488	7318676577142549	CMakeFiles/OpenGLV2024.dir/OpenGLV2024.cpp.obj	665360c8a7a53a0f
-488	603	7318676578034295	OpenGLV2024.exe	1ef52ececc14d615
+35	552	7318680442214277	CMakeFiles/OpenGLV2024.dir/includes/imgui/imgui_tables.cpp.obj	6cbc5649a917555
+23	563	7318680442339698	CMakeFiles/OpenGLV2024.dir/includes/imgui/imgui_impl_opengl3.cpp.obj	6c4552fa495f7ac7
+9	600	7318680442703361	CMakeFiles/OpenGLV2024.dir/includes/imgui/imgui_demo.cpp.obj	f4eb7a75e957f54e
+45	600	7318680442738092	CMakeFiles/OpenGLV2024.dir/includes/glad.c.obj	552b769cc42d7908
+13	617	7318680442877306	CMakeFiles/OpenGLV2024.dir/includes/imgui/imgui_draw.cpp.obj	700d4433ab0ba37e
+18	683	7318680443571711	CMakeFiles/OpenGLV2024.dir/includes/imgui/imgui_widgets.cpp.obj	89c890a97fd016ee
+29	768	7318680444435508	CMakeFiles/OpenGLV2024.dir/includes/imgui/imgui_impl_glfw.cpp.obj	51fdfb1398db1137
+3	944	7318680446174992	CMakeFiles/OpenGLV2024.dir/includes/imgui/imgui.cpp.obj	8de13f26b35aa416
+40	1027	7318680447023868	CMakeFiles/OpenGLV2024.dir/OpenGLV2024.cpp.obj	50970ce930feeb49
+1027	1381	7318680450362337	OpenGLV2024.exe	34ab029bbdfa6347
