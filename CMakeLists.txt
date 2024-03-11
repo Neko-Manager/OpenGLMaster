@@ -38,7 +38,8 @@ set( IMGUI_SOURCE
 set (HEADER_FILES
   includes/stb_image.h
   OpenGLV2024.h
-   core/Application.h)
+   core/Application.h 
+   core/Application.cpp)
 
 set (SRC_FILES
   OpenGLV2024.cpp
