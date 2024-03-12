@@ -2,8 +2,8 @@
 #ifndef APPLICATION_H
 #define APPLICATION_H
 
-///Purpose of class:
-///Create a class which controls and initialize the application.
+/// Purpose of class:
+/// Create a class which controls and initialize the application.
 ///   The program uses the "Singleton Pattern:
 ///   creational design pattern that ensures only a single instance of a class exists throughout an application
 ///   and provides access to that instance from anywhere in the codebase".
@@ -20,12 +20,16 @@ public:
 
 	int RunApplication(); // Runs the application: running the while/render loop
 
+	///Not modifiable
 private:
 	Application() = default; // Default constructor, no need to generate in cpp
 
-	void InitGLFW();
-	void InitApplication();
-	void LoadContent();
+	void InitGLFW(); //Method for Initializing GLFW
+	void InitApplication(); //Method for  Initializing the constructed application
+	void LoadContent(); //Method to load content to be used from window-class
+
+	/*Scene mScene{ "Scene" };
+	Window mWindow{ "LearnOpenGL", &mScene, 1280, 720 };*/
 };
 
 #endif
