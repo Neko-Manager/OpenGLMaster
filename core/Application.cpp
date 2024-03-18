@@ -1,4 +1,6 @@
 #include <Application.h>
+#include <stdexcept>
+
 #include "GLFW/glfw3.h"
 
 Application* Application::Get()
@@ -9,10 +11,10 @@ Application* Application::Get()
 
 void Application::InitGLFW()
 {
-	glfwInit(); 
+	glfwInit();
 	glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
-	glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);  
-	glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE); 
+	glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
+	glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
 }
 
 void Application::InitApplication()
@@ -34,17 +36,17 @@ int Application::RunApplication()
 	//Creating deltaTime
 	float lastFrame = 0.f;
 
-	while (!mWindow.IsClosed())
-	{
-		float currentFrame = static_cast<float>(glfwGetTime()); // Cast convert the function() into a type of <class>, in this instance from glfwGetTime() which is a double into float
-		float deltaTime = currentFrame - lastFrame;
-		lastFrame = currentFrame;
+	//while (!mWindow.IsClosed())
+	//{
+	//	float currentFrame = static_cast<float>(glfwGetTime()); // Cast convert the function() into a type of <class>, in this instance from glfwGetTime() which is a double into float
+	//	float deltaTime = currentFrame - lastFrame;
+	//	lastFrame = currentFrame;
 
-		mWindow.StartFrame();
-		mWindow.Update(deltaTime);
-		mWindow.Render(deltaTime);
-		mWindow.EndFrame();
-	}
+	//	mWindow.StartFrame();
+	//	mWindow.Update(deltaTime);
+	//	mWindow.Render(deltaTime);
+	//	mWindow.EndFrame();
+	//}
 
 	return 0;
 }

@@ -8,15 +8,6 @@ class Scene
 public:
 	explicit Scene(const std::string& name);
 	virtual ~Scene() = default;
-
-
-
-
-
-}
-
-
-
-
+};
 
 #endif
