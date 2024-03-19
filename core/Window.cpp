@@ -94,7 +94,43 @@ bool Window::IsClosed()
 
 void Window::StoreWindowCallback()
 {
+	// Adding lambda functions for callbacks
+    //** Lambda functions  Lambda functions were introduced in C++11 as a way to create function objects (closures) directly in code without the need for defining a separate function.
+    //**They are particularly useful in situations where you need to pass a simple function as an argument to another function, such as in algorithms like std::sort, std::find_if, etc.
 
+    // This line sets the framebuffer size callback for the GLFW window mGLFWWindow.
+	 glfwSetFramebufferSizeCallback(mGLFWWindow, [](GLFWwindow* window, int width, int height) {
+        auto app = reinterpret_cast<Window*>(glfwGetWindowUserPointer(window)); // This line retrieves a pointer to a Window object associated with the GLFW window.
+        if (app)
+        {
+            app->FramebufferSizeCallback(window, width, height);
+            app->SetWidth(width);
+            app->SetHeight(height);
+        }
+        }); // This line sets the framebuffer size callback for the GLFW window mGLFWWindow.
+
+    glfwSetCursorPosCallback(mGLFWWindow, [](GLFWwindow* window, double xpos, double ypos) {
+        auto app = reinterpret_cast<Window*>(glfwGetWindowUserPointer(window));
+        if (app) app->MouseMoveCallback(window, xpos, ypos);
+        }); // Lambda function taking window and cursor position parameters.
+
+    glfwSetMouseButtonCallback(mGLFWWindow, [](GLFWwindow* window, int button, int action, int mods) {
+        auto app = reinterpret_cast<Window*>(glfwGetWindowUserPointer(window));
+        if (app) app->MouseButtonCallback(window, button, action, mods);
+        }); // Lambda function taking window and mouse buttons and action.
+
+    glfwSetScrollCallback(mGLFWWindow, [](GLFWwindow* window, double xoffset, double yoffset) {
+        auto app = reinterpret_cast<Window*>(glfwGetWindowUserPointer(window));
+        if (app) app->MouseScrollCallback(window, xoffset, yoffset);
+        }); // Lambda function taking window and scroll button.
+
+    glfwSetKeyCallback(mGLFWWindow, [](GLFWwindow* window, int key, int scancode, int action, int mods) {
+        auto app = reinterpret_cast<Window*>(glfwGetWindowUserPointer(window));
+        if (app) app->KeyCallback(window, key, scancode, action, mods);
+        }); // Lambda function taking window, keyboard events and actions.
+
+    // Store pointer so it can be accessed in callbacks
+    glfwSetWindowUserPointer(mGLFWWindow, this);
 }
 
 void Window::FramebufferSizeCallback(GLFWwindow* window, int height, int width)
