@@ -6,18 +6,19 @@
 #include <string>
 #include <assert.h>
 
-int main{
+int main()
+{
 	int num1 = 10;
 	double num2 = 4.5;
 
 	std::string result = std::to_string(num1) + " " + std::to_string(num2);
 
 	int x = 1;
-	auto geterror = std::runtime_error("This is an error"); 
 
 	///Krasj måter
 
 	///1.
+	//auto geterror = std::runtime_error("This is an error"); 
 	/*	if (x == 0) 
 		{
 			return 1;

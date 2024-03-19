@@ -37,7 +37,7 @@ set( IMGUI_SOURCE
 
 set (HEADER_FILES
   includes/stb_image.h
-  OpenGLV2024.h
+   OpenGLV2024.h
    core/Application.h 
    core/Window.h 
    core/Scene.h)
@@ -45,9 +45,9 @@ set (HEADER_FILES
 set (SRC_FILES
   OpenGLV2024.cpp
   includes/glad.c
- core/Application.cpp
- core/Window.cpp
- core/Scene.cpp)
+  core/Application.cpp
+  core/Window.cpp
+  core/Scene.cpp)
 
 # Add source to this project's executable.
 add_executable (OpenGLV2024  ${IMGUI_HEADERS} ${IMGUI_SOURCE} ${HEADER_FILES} ${SRC_FILES} 

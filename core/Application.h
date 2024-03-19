@@ -2,6 +2,7 @@
 
 #include "Scene.h"
 #include "Window.h"
+#include <memory>
 
 /// Purpose of class:
 /// Create a class which controls and initialize the application.

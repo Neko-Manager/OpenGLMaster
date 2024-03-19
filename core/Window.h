@@ -35,7 +35,7 @@ public:
 	void MouseMovementCallback(struct GLFWwindow* window, double xPos, double yPos); //Method to callback mouseMovement.
 	void MouseButtonCallback(struct GLFWwindow* window, int button, int action, int mods); //Method  to callback MouseButton
 	void MouseScrollCallback(struct GLFWwindow* window, double xOffset, double yOffset);
-	void keyCallback(struct GLFWwindow* window, int key, int scanCode, int action, int mods);
+	void KeyCallback(struct GLFWwindow* window, int key, int scanCode, int action, int mods);
 
 	///Setters
 	void SetWidth(int width);

@@ -111,7 +111,7 @@ void Window::RegisterWindowCallbacks()
 
     glfwSetCursorPosCallback(mGLFWWindow, [](GLFWwindow* window, double xpos, double ypos) {
         auto app = reinterpret_cast<Window*>(glfwGetWindowUserPointer(window));
-        if (app) app->MouseMoveCallback(window, xpos, ypos);
+        if (app) app->MouseMovementCallback(window, xpos, ypos);
         }); // Lambda function taking window and cursor position parameters.
 
     glfwSetMouseButtonCallback(mGLFWWindow, [](GLFWwindow* window, int button, int action, int mods) {
@@ -149,7 +149,7 @@ void Window::MouseScrollCallback(GLFWwindow* window, double xOffset, double yOff
 {
 }
 
-void Window::keyCallback(GLFWwindow* window, int key, int scanCode, int action, int mods)
+void Window::KeyCallback(GLFWwindow* window, int key, int scanCode, int action, int mods)
 {
 }
 

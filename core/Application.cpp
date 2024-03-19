@@ -1,7 +1,8 @@
 #include <Application.h>
 #include <stdexcept>
 
-#include "GLFW/glfw3.h"
+#include <glad/glad.h>
+#include <GLFW/glfw3.h>
 
 Application* Application::Get()
 {
