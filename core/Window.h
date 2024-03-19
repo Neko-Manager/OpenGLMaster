@@ -3,9 +3,6 @@
 #include "glad/glad.h"
 #include <GLFW/glfw3.h>
 
-#ifndef WINDOW_H
-#define WINDOW_H
-
 /// Purpose of class:
 /// Managing all methods and members neccessary to create a GLM-window.
 /// managaing all glm-callbacks, such as for FramebufferSize and MouseMovementCallback.
@@ -33,7 +30,7 @@ public:
 	///Callback Methods
 	//Callback = a function passed into another function as an argument.
 	//It is then invoked inside the outer function.
-	void StoreWindowCallback(); //Method for storing callback functions to GLFWWindow
+	void RegisterWindowCallbacks(); //Method for storing callback functions to GLFWWindow
 	void FramebufferSizeCallback(struct GLFWwindow* window, int height, int width); //Method to callback window GUI: GLFWWindow object pointer, integer for height and width
 	void MouseMovementCallback(struct GLFWwindow* window, double xPos, double yPos); //Method to callback mouseMovement.
 	void MouseButtonCallback(struct GLFWwindow* window, int button, int action, int mods); //Method  to callback MouseButton
@@ -56,5 +53,3 @@ private:
 	Scene* mScene{ nullptr }; // Member Pointer to the scene component
 	GLFWwindow* mGLFWWindow{ nullptr }; // Creating a new struct of type GLFWwindow pointer / adress.
 };
-
-#endif

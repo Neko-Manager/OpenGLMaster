@@ -1,5 +1,5 @@
-#ifndef SCENE_H
-#define SCENE_H
+#pragma once
+
 #include <memory>
 #include <iostream>
 
@@ -9,5 +9,3 @@ public:
 	explicit Scene(const std::string& name);
 	virtual ~Scene() = default;
 };
-
-#endif

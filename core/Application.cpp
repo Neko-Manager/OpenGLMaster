@@ -20,12 +20,13 @@ void Application::InitGLFW()
 void Application::InitApplication()
 {
 	InitGLFW();
-	//TODO: Add window class and the functions mWindow.Init(); mWindow.RegisterWindowCallbacks();
+	mWindow.InitWindow();
+	mWindow.RegisterWindowCallbacks();
 }
 
 void Application::LoadContent()
 {
-	//TODO: mWindow.LoadContent();
+	mWindow.LoadContent();
 }
 
 int Application::RunApplication()
@@ -33,20 +34,21 @@ int Application::RunApplication()
 	InitApplication();
 	LoadContent();
 
-	//Creating deltaTime
-	float lastFrame = 0.f;
+   float lastFrame = static_cast<float>(glfwGetTime());
 
-	//while (!mWindow.IsClosed())
-	//{
-	//	float currentFrame = static_cast<float>(glfwGetTime()); // Cast convert the function() into a type of <class>, in this instance from glfwGetTime() which is a double into float
-	//	float deltaTime = currentFrame - lastFrame;
-	//	lastFrame = currentFrame;
+	while (!mWindow.IsClosed())
+	{
+		float currentFrame = static_cast<float>(glfwGetTime()); // Cast convert the function() into a type of <class>, in this instance from glfwGetTime() which is a double into float
+		float deltaTime = currentFrame - lastFrame;
+		lastFrame = currentFrame;
 
-	//	mWindow.StartFrame();
-	//	mWindow.Update(deltaTime);
-	//	mWindow.Render(deltaTime);
-	//	mWindow.EndFrame();
-	//}
+		mWindow.StartFrame();
+		mWindow.Update(deltaTime);
+		mWindow.Render(deltaTime);
+		mWindow.EndFrame();
+	}
+
+	glfwTerminate();
 
 	return 0;
 }

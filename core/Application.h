@@ -1,6 +1,7 @@
 #pragma once
-#ifndef APPLICATION_H
-#define APPLICATION_H
+
+#include "Scene.h"
+#include "Window.h"
 
 /// Purpose of class:
 /// Create a class which controls and initialize the application.
@@ -28,8 +29,6 @@ private:
 	void InitApplication(); //Method for  Initializing the constructed application
 	void LoadContent(); //Method to load content to be used from window-class
 
-	/*Scene mScene{ "Scene" };
-	Window mWindow{ "LearnOpenGL", &mScene, 1280, 720 };*/
+	Scene mScene{ "Scene" };
+	Window mWindow{ "LearnOpenGL", &mScene, 1280, 720 };
 };
-
-#endif

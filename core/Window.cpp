@@ -92,7 +92,7 @@ bool Window::IsClosed()
 	return glfwWindowShouldClose(mGLFWWindow); // Checking whether a GLFW window should close
 }
 
-void Window::StoreWindowCallback()
+void Window::RegisterWindowCallbacks()
 {
 	// Adding lambda functions for callbacks
     //** Lambda functions  Lambda functions were introduced in C++11 as a way to create function objects (closures) directly in code without the need for defining a separate function.
