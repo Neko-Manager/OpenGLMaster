@@ -6,8 +6,7 @@
 #include <string>
 #include <assert.h>
 
-int main()
-{
+int main{
 	int num1 = 10;
 	double num2 = 4.5;
 
