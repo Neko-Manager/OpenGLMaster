@@ -22,12 +22,14 @@ public:
 
 	void InitWindow(); //Method for initlaizing window class
 	bool LoadContent(); //Methods to check if loaded is content or not
-	void SetScene(Scene* scene); //Method for creating a scene. Requires: scene object with pointer.
+    void StartFrame();
 	void Update(float deltaTime); //Method for updating class in real time: deltaTime float
 	void Render(float deltaTime); //Method for rendering class in real time: deltaTime float
 	void EndFrame(); //Method to end frame
 
 	bool IsClosed(); //Method to see if object is not loading anymore.
+	void SetScene(Scene* scene); //Method for creating a scene. Requires: scene object with pointer.
+
 
 	///Callback Methods
 	//Callback = a function passed into another function as an argument.
