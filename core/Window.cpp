@@ -5,7 +5,7 @@
 #include "imgui_impl_opengl3.h"
 
 
-Window::Window(std::string name, Scene* scene, int width, int height)
+Window::Window(std::string name, Scene* scene, int width, int height) //Constructor with deafult variables for window object
 {
 	mName = name;
 	mScene = scene;
@@ -13,7 +13,7 @@ Window::Window(std::string name, Scene* scene, int width, int height)
 	mHeight = height;
 }
 
-Window::~Window()
+Window::~Window() //Destructor of window object. Calls neccessary includes to destroy or shutdown the functions
 {
 	glfwDestroyWindow(mGLFWWindow);
 	ImGui_ImplOpenGL3_Shutdown();
@@ -70,12 +70,18 @@ void Window::StartFrame()
 
 void Window::Update(float deltaTime)
 {
-	//TODO: mScene Update
+    /*if (mScene)
+    {
+        mScene->Update(dt);
+    }*/
 }
 
 void Window::Render(float deltaTime)
 {
-	//TODO: mScene Render
+   /* if (mScene)
+    {
+        mScene->Render(dt);
+    }*/
 }
 
 void Window::EndFrame()
