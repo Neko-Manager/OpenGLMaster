@@ -35,26 +35,41 @@ set( IMGUI_SOURCE
     includes/imgui/imgui_tables.cpp
 )
 
-set (HEADER_FILES
-  includes/stb_image.h
+set( HEADER_FILES
+   includes/stb_image.h
    OpenGLV2024.h
    core/Application.h 
    core/Window.h 
-   core/Scene.h)
+   core/Scene.h
+   core/SceneGraph.h 
+   core/Actor.h
+   core/Transform.h
+   core/Component.h
+)
 
 set (SRC_FILES
   OpenGLV2024.cpp
   includes/glad.c
   core/Application.cpp
   core/Window.cpp
-  core/Scene.cpp)
+  core/Scene.cpp
+  core/SceneGraph.cpp
+  core/Actor.cpp
+  core/Transform.cpp
+  core/Component.cpp
+)
 
 # Add source to this project's executable.
 add_executable (OpenGLV2024  ${IMGUI_HEADERS} ${IMGUI_SOURCE} ${HEADER_FILES} ${SRC_FILES} 
                 OpenGLV2024.cpp OpenGLV2024.h 
                 core/Application.h core/Application.cpp
                 core/Window.h core/Window.cpp
-                core/Scene.h core/Scene.cpp)
+                core/Scene.h core/Scene.cpp 
+                core/SceneGraph.h core/SceneGraph.cpp
+                core/Actor.h core/Actor.cpp
+                core/Transform.h core/Transform.cpp
+                core/Component.h  core/Component.cpp 
+) 
 
 #target_link_libraries(OpenGLV2024 glfw)
 target_link_libraries(OpenGLV2024 PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/libs/glfw3.lib)

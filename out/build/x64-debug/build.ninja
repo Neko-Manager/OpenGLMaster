@@ -145,6 +145,38 @@ build CMakeFiles\OpenGLV2024.dir\core\Scene.cpp.obj: CXX_COMPILER__OpenGLV2024_u
   TARGET_COMPILE_PDB = CMakeFiles\OpenGLV2024.dir\
   TARGET_PDB = OpenGLV2024.pdb
 
+build CMakeFiles\OpenGLV2024.dir\core\SceneGraph.cpp.obj: CXX_COMPILER__OpenGLV2024_unscanned_Debug C$:\Dokumenter\SpiltekV2024\3D_Prog\OpenGLMaster\core\SceneGraph.cpp || cmake_object_order_depends_target_OpenGLV2024
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -std:c++20 -ZI
+  INCLUDES = -IC:\Dokumenter\SpiltekV2024\3D_Prog\OpenGLMaster\includes -IC:\Dokumenter\SpiltekV2024\3D_Prog\OpenGLMaster\includes\imgui -IC:\Dokumenter\SpiltekV2024\3D_Prog\OpenGLMaster\core
+  OBJECT_DIR = CMakeFiles\OpenGLV2024.dir
+  OBJECT_FILE_DIR = CMakeFiles\OpenGLV2024.dir\core
+  TARGET_COMPILE_PDB = CMakeFiles\OpenGLV2024.dir\
+  TARGET_PDB = OpenGLV2024.pdb
+
+build CMakeFiles\OpenGLV2024.dir\core\Actor.cpp.obj: CXX_COMPILER__OpenGLV2024_unscanned_Debug C$:\Dokumenter\SpiltekV2024\3D_Prog\OpenGLMaster\core\Actor.cpp || cmake_object_order_depends_target_OpenGLV2024
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -std:c++20 -ZI
+  INCLUDES = -IC:\Dokumenter\SpiltekV2024\3D_Prog\OpenGLMaster\includes -IC:\Dokumenter\SpiltekV2024\3D_Prog\OpenGLMaster\includes\imgui -IC:\Dokumenter\SpiltekV2024\3D_Prog\OpenGLMaster\core
+  OBJECT_DIR = CMakeFiles\OpenGLV2024.dir
+  OBJECT_FILE_DIR = CMakeFiles\OpenGLV2024.dir\core
+  TARGET_COMPILE_PDB = CMakeFiles\OpenGLV2024.dir\
+  TARGET_PDB = OpenGLV2024.pdb
+
+build CMakeFiles\OpenGLV2024.dir\core\Transform.cpp.obj: CXX_COMPILER__OpenGLV2024_unscanned_Debug C$:\Dokumenter\SpiltekV2024\3D_Prog\OpenGLMaster\core\Transform.cpp || cmake_object_order_depends_target_OpenGLV2024
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -std:c++20 -ZI
+  INCLUDES = -IC:\Dokumenter\SpiltekV2024\3D_Prog\OpenGLMaster\includes -IC:\Dokumenter\SpiltekV2024\3D_Prog\OpenGLMaster\includes\imgui -IC:\Dokumenter\SpiltekV2024\3D_Prog\OpenGLMaster\core
+  OBJECT_DIR = CMakeFiles\OpenGLV2024.dir
+  OBJECT_FILE_DIR = CMakeFiles\OpenGLV2024.dir\core
+  TARGET_COMPILE_PDB = CMakeFiles\OpenGLV2024.dir\
+  TARGET_PDB = OpenGLV2024.pdb
+
+build CMakeFiles\OpenGLV2024.dir\core\Component.cpp.obj: CXX_COMPILER__OpenGLV2024_unscanned_Debug C$:\Dokumenter\SpiltekV2024\3D_Prog\OpenGLMaster\core\Component.cpp || cmake_object_order_depends_target_OpenGLV2024
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -std:c++20 -ZI
+  INCLUDES = -IC:\Dokumenter\SpiltekV2024\3D_Prog\OpenGLMaster\includes -IC:\Dokumenter\SpiltekV2024\3D_Prog\OpenGLMaster\includes\imgui -IC:\Dokumenter\SpiltekV2024\3D_Prog\OpenGLMaster\core
+  OBJECT_DIR = CMakeFiles\OpenGLV2024.dir
+  OBJECT_FILE_DIR = CMakeFiles\OpenGLV2024.dir\core
+  TARGET_COMPILE_PDB = CMakeFiles\OpenGLV2024.dir\
+  TARGET_PDB = OpenGLV2024.pdb
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target OpenGLV2024
@@ -153,7 +185,7 @@ build CMakeFiles\OpenGLV2024.dir\core\Scene.cpp.obj: CXX_COMPILER__OpenGLV2024_u
 #############################################
 # Link the executable OpenGLV2024.exe
 
-build OpenGLV2024.exe: CXX_EXECUTABLE_LINKER__OpenGLV2024_Debug CMakeFiles\OpenGLV2024.dir\includes\imgui\imgui.cpp.obj CMakeFiles\OpenGLV2024.dir\includes\imgui\imgui_demo.cpp.obj CMakeFiles\OpenGLV2024.dir\includes\imgui\imgui_draw.cpp.obj CMakeFiles\OpenGLV2024.dir\includes\imgui\imgui_widgets.cpp.obj CMakeFiles\OpenGLV2024.dir\includes\imgui\imgui_impl_opengl3.cpp.obj CMakeFiles\OpenGLV2024.dir\includes\imgui\imgui_impl_glfw.cpp.obj CMakeFiles\OpenGLV2024.dir\includes\imgui\imgui_tables.cpp.obj CMakeFiles\OpenGLV2024.dir\OpenGLV2024.cpp.obj CMakeFiles\OpenGLV2024.dir\includes\glad.c.obj CMakeFiles\OpenGLV2024.dir\core\Application.cpp.obj CMakeFiles\OpenGLV2024.dir\core\Window.cpp.obj CMakeFiles\OpenGLV2024.dir\core\Scene.cpp.obj | C$:\Dokumenter\SpiltekV2024\3D_Prog\OpenGLMaster\libs\glfw3.lib
+build OpenGLV2024.exe: CXX_EXECUTABLE_LINKER__OpenGLV2024_Debug CMakeFiles\OpenGLV2024.dir\includes\imgui\imgui.cpp.obj CMakeFiles\OpenGLV2024.dir\includes\imgui\imgui_demo.cpp.obj CMakeFiles\OpenGLV2024.dir\includes\imgui\imgui_draw.cpp.obj CMakeFiles\OpenGLV2024.dir\includes\imgui\imgui_widgets.cpp.obj CMakeFiles\OpenGLV2024.dir\includes\imgui\imgui_impl_opengl3.cpp.obj CMakeFiles\OpenGLV2024.dir\includes\imgui\imgui_impl_glfw.cpp.obj CMakeFiles\OpenGLV2024.dir\includes\imgui\imgui_tables.cpp.obj CMakeFiles\OpenGLV2024.dir\OpenGLV2024.cpp.obj CMakeFiles\OpenGLV2024.dir\includes\glad.c.obj CMakeFiles\OpenGLV2024.dir\core\Application.cpp.obj CMakeFiles\OpenGLV2024.dir\core\Window.cpp.obj CMakeFiles\OpenGLV2024.dir\core\Scene.cpp.obj CMakeFiles\OpenGLV2024.dir\core\SceneGraph.cpp.obj CMakeFiles\OpenGLV2024.dir\core\Actor.cpp.obj CMakeFiles\OpenGLV2024.dir\core\Transform.cpp.obj CMakeFiles\OpenGLV2024.dir\core\Component.cpp.obj | C$:\Dokumenter\SpiltekV2024\3D_Prog\OpenGLMaster\libs\glfw3.lib
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -ZI
   LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
   LINK_LIBRARIES = C:\Dokumenter\SpiltekV2024\3D_Prog\OpenGLMaster\libs\glfw3.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
