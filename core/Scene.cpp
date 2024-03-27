@@ -1,9 +1,11 @@
 #include "Scene.h"
 
-Scene::Scene(const std::string& name)
-{
-	//mSceneGraph(name);
-}
+///Includes 
+#include <Actor.h>
+#include <imgui.h>
+#include <GLFW/glfw3.h>
+
+Scene::Scene(const std::string& name): mSceneGraph(name) {} //Initialization list must be used when init an object
 
 void Scene::LoadContent()
 {
@@ -73,6 +75,41 @@ void Scene::UnloadContent()
 void Scene::UpdateInputController(float dt)
 {
 	//if (mActiveController) mActiveController->Update(dt);
+}
+
+void Scene::UpdateSceneGraph(Actor* actor, float dt, Transform globalParentTransform)
+{
+	if (!actor) return;
+
+	actor->Update(dt);
+	actor->UpdateComponents(dt);
+
+	globalParentTransform.SetTransformMatrix(globalParentTransform.GetTransformMatrix() * actor->GetLocalTransformMatrix());
+
+	const auto& children = actor->GetChildren();
+	for (Actor* child : children)
+	{
+		UpdateSceneGraph(child, dt, globalParentTransform);
+	}
+}
+
+void Scene::RenderSceneGraph(Actor* actor, float dt, Transform globalParentTransform)
+{
+	if (!actor) return;
+
+	globalParentTransform.SetTransformMatrix(globalParentTransform.GetTransformMatrix() * actor->GetLocalTransformMatrix());
+
+	/*if (auto iRender = dynamic_cast<IRender*>(actor))
+	{
+		mShader->setMat4("model", globalParentTransform.GetTransformMatrix());
+		iRender->Draw(mShader);
+	}*/
+
+	const auto& children = actor->GetChildren();
+	for (Actor* child : children)
+	{
+		RenderSceneGraph(child, dt, globalParentTransform);
+	}
 }
 
 void Scene::SceneUpdate(float dt)

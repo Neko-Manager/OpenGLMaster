@@ -1,21 +1,19 @@
 #pragma once
 
-///Libraries
+///Includes
 #include <iostream>
 #include <vector>
 #include <Transform.h>
 #include <Component.h> 
+#include <Tag.h> 
+#include <type_traits>
 
 class Actor
 {
 public:
 	///Actor object
 	//Creating the object
-	Actor(const std::string& name)
-	{
-		/*mTag(name); 
-		mParent(nullptr);*/
-	}
+	Actor(const std::string& name) :mTag(name), mParent(nullptr) {};
 
 	//Deleting object
 	Actor(const Actor&) = delete;
@@ -64,16 +62,16 @@ public:
 
 	/// Getters
 	//Get all all information for the objects linear algebraL: where it is, what vector properties it has, scale etc
-	//const glm::vec3& GetLocalPosition() const;
+	const glm::vec3& GetLocalPosition() const;
 	glm::vec3 GetWorldPosition() const;
-	//const glm::quat& GetLocalRotation() const;
+	const glm::quat& GetLocalRotation() const;
 	glm::quat GetWorldRotation() const;
-	//const glm::vec3& GetLocalScale() const;
+	const glm::vec3& GetLocalScale() const;
 	glm::vec3 GetWorldScale() const;
-	//const glm::mat4 GetLocalTransformMatrix() const;
+	const glm::mat4 GetLocalTransformMatrix() const;
 	glm::mat4 GetWorldTransformMatrix() const;
-	//const Transform& GetLocalTransform() const;
-	//std::vector<Actor*>& GetChildren();
+	const Transform& GetLocalTransform() const;
+	std::vector<Actor*>& GetChildren();
 	glm::vec3 GetRight() const;
 
 	///Adds actors of type T to a vector if they match the current object type
@@ -96,6 +94,6 @@ protected:
 	std::vector<Component*> mComponents;
 
 private:
-	/*TagUnique mTag;
-	Transform mTransform{};*/
+	TagUnique mTag;
+	Transform mTransform{};
 };

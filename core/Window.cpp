@@ -5,13 +5,8 @@
 #include "imgui_impl_opengl3.h"
 
 
-Window::Window(std::string name, Scene* scene, int width, int height) //Constructor with deafult variables for window object
-{
-	mName = name;
-	mScene = scene;
-	mWidth = width;
-	mHeight = height;
-}
+Window::Window(std::string name, Scene* scene, int width, int height) :mName(name), mScene(scene), mWidth(width), mHeight(height) {} //Constructor with deafult variables for window object
+
 
 Window::~Window() //Destructor of window object. Calls neccessary includes to destroy or shutdown the functions
 {

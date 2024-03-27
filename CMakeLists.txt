@@ -45,6 +45,7 @@ set( HEADER_FILES
    core/Actor.h
    core/Transform.h
    core/Component.h
+   core/Tag.h
 )
 
 set (SRC_FILES
@@ -53,10 +54,7 @@ set (SRC_FILES
   core/Application.cpp
   core/Window.cpp
   core/Scene.cpp
-  core/SceneGraph.cpp
   core/Actor.cpp
-  core/Transform.cpp
-  core/Component.cpp
 )
 
 # Add source to this project's executable.
@@ -65,10 +63,11 @@ add_executable (OpenGLV2024  ${IMGUI_HEADERS} ${IMGUI_SOURCE} ${HEADER_FILES} ${
                 core/Application.h core/Application.cpp
                 core/Window.h core/Window.cpp
                 core/Scene.h core/Scene.cpp 
-                core/SceneGraph.h core/SceneGraph.cpp
+                core/SceneGraph.h 
                 core/Actor.h core/Actor.cpp
-                core/Transform.h core/Transform.cpp
-                core/Component.h  core/Component.cpp 
+                core/Transform.h 
+                core/Component.h  
+                core/Tag.h
 ) 
 
 #target_link_libraries(OpenGLV2024 glfw)

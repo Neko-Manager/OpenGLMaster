@@ -1,7 +1,9 @@
 #pragma once
 
+///Includes
 #include <memory>
 #include <iostream>
+#include <SceneGraph.h>
 
 class Scene
 {
@@ -31,11 +33,11 @@ public:
 	void UpdateInputController(float dt);
 
 	///Scene Graph
-	//void UpdateSceneGraph(Actor* actor, float dt, Transform globalParentTransform = Transform{});
+	void UpdateSceneGraph(Actor* actor, float dt, Transform globalParentTransform = Transform{});
 
-	//void RenderSceneGraph(Actor* actor, float dt, Transform globalParentTransform = Transform{});
+	void RenderSceneGraph(Actor* actor, float dt, Transform globalParentTransform = Transform{});
 
-	//SceneGraph mSceneGraph; 
+	SceneGraph mSceneGraph; 
 
 	///Scene Update
 	//Updates the scene with deltaTime
